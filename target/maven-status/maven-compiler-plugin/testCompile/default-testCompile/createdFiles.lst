@@ -1,0 +1,5 @@
+testcases\DeleteRequestTest.class
+testcases\ParameterizedCreateUserTest.class
+stepdefination\ReqresAPIStep.class
+testcases\GetRequestTest.class
+testcases\PostRequestTest.class

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: testcases.GetRequestTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.664 s <<< FAILURE! - in testcases.GetRequestTest
+getUserTest(testcases.GetRequestTest)  Time elapsed: 4.788 s  <<< ERROR!
+org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]
+	at testcases.GetRequestTest.getUserTest(GetRequestTest.java:23)
+

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Parameterized Create user test using POST request</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
+<script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<!-- ImgPreview -->
+<script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+</head>
+
+
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+        <span class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs">Home</a>
+
+        > Parameterized Create user test using POST request
+        </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-03-2021 12:35</span>
+    <br style="clear:left"/>
+</div>
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <span class="story-header-title">Parameterized Create User Test</span>
+                                    </h3>
+
+                                    <div class="discreet-requirement-narrative-title">
+                                        
+                                    </div>
+                                </div>
+
+                        </td>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    Parameterized Create user test using POST request
+                                        <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">To CREATE the user with name : &lt;null&gt; and jobTitile : &lt;job&gt;<br>The status code for the request should be: 201</div>
+
+        </div>
+
+    <div id="beforetable"></div>
+
+
+            <h3 class="story-header">Examples:</h3>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>﻿Name</th>
+                            <th>Job</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Rohan Sharma</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Quality Engineer</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#1">2</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">Sarvesh Kumar Jaiswal</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">SDET-1</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#2">3</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">Shubhangi Vasistha</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#2">Data Engineer - 4</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#3">4</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#3">Shivangi</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#3">HR Manager</a>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#4">5</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#4">Ishank</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#4">HR Associate</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">                        &nbsp;
+                    </th>
+
+                        <th width="%"
+                            class="step-description-wide-column greentext">
+                            Steps
+                        </th>
+                    <th width="130" class="greentext">Outcome</th>
+                    <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Parameterized Create user test using POST request
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.18s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                To CREATE the user with name : &lt;null&gt; and jobTitile : Quality Engineer
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.12s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection0-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                POST https://reqres.in/api/users/
+                            </span>
+                            <span class="evidence">
+                                    <span class="piece-of-evidence">
+                        <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#restModal-REST-3">
+                        REST Query
+                    </button>
+                </span>
+                        <!-- Modal -->
+                        <div class="rest-query-details">
+                            <div class="collapse multi-collapse" id="restModal-REST-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Response</h4>
+                                            <p>Status code: 201</p>
+                                            <p>Content Type: application/json</p>
+                                            <h4>Request Headers</h4>
+                                            <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                            <h4>Content Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;Quality Engineer&quot;<br>}</pre>
+                                            <h4>Request Cookies</h4>
+                                            <pre></pre>
+                                            <h4>Response Headers</h4>
+                                            <pre>Date: Wed, 03 Mar 2021 07:05:15 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 76<br>Connection: keep-alive<br>Set-Cookie: __cfduid=d5bf56fd80a9b352380ee22a3599551411614755115; expires=Fri, 02-Apr-21 07:05:15 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;4c-ZIprC6amw7Wo2Ttnp/ArP+kvDJs&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>cf-request-id: 089880c91700001a2e3d9ca000000001<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=ZzHSIuPJb9dllt3Xh4QgIHvVOAWi1o3v1mV5QXqZcvxPrqk0N4vlxuQAFZ4P9tzKbtU432bCDYzMy3Cx2caXrVl%2FvpSTywj2UDA%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}<br>NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 62a103ee8ad31a2e-SIN</pre>
+                                        <h4>Response Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;Quality Engineer&quot;,<br>    &quot;id&quot;: &quot;355&quot;,<br>    &quot;createdAt&quot;: &quot;2021-03-03T07:05:15.625Z&quot;<br>}</pre>
+                                            <h4>Response Cookies</h4>
+                                            <pre>__cfduid=d5bf56fd80a9b352380ee22a3599551411614755115;Path=/;Domain=.reqres.in;Secure;HttpOnly;Expires=2/4/21 7:05 AM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </span>
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                The status code for the request should be: 201
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.07s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Parameterized Create user test using POST request
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.06s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                To CREATE the user with name : &lt;null&gt; and jobTitile : SDET-1
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.06s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection1-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                POST https://reqres.in/api/users/
+                            </span>
+                            <span class="evidence">
+                                    <span class="piece-of-evidence">
+                        <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#restModal-REST-7">
+                        REST Query
+                    </button>
+                </span>
+                        <!-- Modal -->
+                        <div class="rest-query-details">
+                            <div class="collapse multi-collapse" id="restModal-REST-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Response</h4>
+                                            <p>Status code: 201</p>
+                                            <p>Content Type: application/json</p>
+                                            <h4>Request Headers</h4>
+                                            <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                            <h4>Content Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;SDET-1&quot;<br>}</pre>
+                                            <h4>Request Cookies</h4>
+                                            <pre></pre>
+                                            <h4>Response Headers</h4>
+                                            <pre>Date: Wed, 03 Mar 2021 07:05:16 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 66<br>Connection: keep-alive<br>Set-Cookie: __cfduid=d84a84911412d9579edcd777e2f7f7fbc1614755116; expires=Fri, 02-Apr-21 07:05:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;42-J7KfLEe6uYvP9WYj0pW6wU5rfdA&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>cf-request-id: 089880cd99000001762190a000000001<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=cwYIzGskUB3d59gikFKYPz1nMM2NQdaTMIIDajpahBelptdDCO88gXHWdl5nOj0%2BFchdkicpusEi0gNeE3G2AxGcY2kBFkhUVfg%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}<br>NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 62a103f5cf760176-SIN</pre>
+                                        <h4>Response Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;SDET-1&quot;,<br>    &quot;id&quot;: &quot;282&quot;,<br>    &quot;createdAt&quot;: &quot;2021-03-03T07:05:16.776Z&quot;<br>}</pre>
+                                            <h4>Response Cookies</h4>
+                                            <pre>__cfduid=d84a84911412d9579edcd777e2f7f7fbc1614755116;Path=/;Domain=.reqres.in;Secure;HttpOnly;Expires=2/4/21 7:05 AM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </span>
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="1-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                The status code for the request should be: 201
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Parameterized Create user test using POST request
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.99s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="2-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                To CREATE the user with name : &lt;null&gt; and jobTitile : Data Engineer - 4
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.99s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection2-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="2-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                POST https://reqres.in/api/users/
+                            </span>
+                            <span class="evidence">
+                                    <span class="piece-of-evidence">
+                        <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#restModal-REST-11">
+                        REST Query
+                    </button>
+                </span>
+                        <!-- Modal -->
+                        <div class="rest-query-details">
+                            <div class="collapse multi-collapse" id="restModal-REST-11">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Response</h4>
+                                            <p>Status code: 201</p>
+                                            <p>Content Type: application/json</p>
+                                            <h4>Request Headers</h4>
+                                            <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                            <h4>Content Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;Data Engineer - 4&quot;<br>}</pre>
+                                            <h4>Request Cookies</h4>
+                                            <pre></pre>
+                                            <h4>Response Headers</h4>
+                                            <pre>Date: Wed, 03 Mar 2021 07:05:17 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 77<br>Connection: keep-alive<br>Set-Cookie: __cfduid=d3326644d6ff3a2b45425372e7c00e33d1614755117; expires=Fri, 02-Apr-21 07:05:17 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;4d-fTkcWhTZI8IvUnKa5z6V3Vocp/Y&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>cf-request-id: 089880d16700001a36650df000000001<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=VlYlY6gs6xwBYiOP6IA%2F4sVQHO7frcBcHXbWTCubcBNCLJ5J8FNgVl78CBKtzoqnMAlr7Dy2HxPgDSUzvhqnvrf49N6acgo%2BBf0%3D&quot;}]}<br>NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 62a103fbdfbb1a36-SIN</pre>
+                                        <h4>Response Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;Data Engineer - 4&quot;,<br>    &quot;id&quot;: &quot;970&quot;,<br>    &quot;createdAt&quot;: &quot;2021-03-03T07:05:17.746Z&quot;<br>}</pre>
+                                            <h4>Response Cookies</h4>
+                                            <pre>__cfduid=d3326644d6ff3a2b45425372e7c00e33d1614755117;Path=/;Domain=.reqres.in;Secure;HttpOnly;Expires=2/4/21 7:05 AM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </span>
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="2-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                The status code for the request should be: 201
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="3"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Parameterized Create user test using POST request
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1.02s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection3" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="3-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection3-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                To CREATE the user with name : &lt;null&gt; and jobTitile : HR Manager
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.02s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection3-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="3-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                POST https://reqres.in/api/users/
+                            </span>
+                            <span class="evidence">
+                                    <span class="piece-of-evidence">
+                        <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#restModal-REST-15">
+                        REST Query
+                    </button>
+                </span>
+                        <!-- Modal -->
+                        <div class="rest-query-details">
+                            <div class="collapse multi-collapse" id="restModal-REST-15">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Response</h4>
+                                            <p>Status code: 201</p>
+                                            <p>Content Type: application/json</p>
+                                            <h4>Request Headers</h4>
+                                            <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                            <h4>Content Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;HR Manager&quot;<br>}</pre>
+                                            <h4>Request Cookies</h4>
+                                            <pre></pre>
+                                            <h4>Response Headers</h4>
+                                            <pre>Date: Wed, 03 Mar 2021 07:05:18 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 70<br>Connection: keep-alive<br>Set-Cookie: __cfduid=dc47675d886f09066e98cfb53c4be9ac31614755118; expires=Fri, 02-Apr-21 07:05:18 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;46-qSLQsGStlJ/s084AGh5jaUDWSj4&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>cf-request-id: 089880d56c000001dda495c000000001<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=HAOaTt%2B3JHSvWkJFHoazpHV39PgTQJFFW7%2BDRwRf4nYU9M5AK4%2F8pIOvr%2FQrvT6gvQj50PGJUEmfS9qUkD%2FrOcHjhnD4ev4aE6s%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}<br>Server: cloudflare<br>CF-RAY: 62a104024fa201dd-SIN</pre>
+                                        <h4>Response Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;HR Manager&quot;,<br>    &quot;id&quot;: &quot;145&quot;,<br>    &quot;createdAt&quot;: &quot;2021-03-03T07:05:18.784Z&quot;<br>}</pre>
+                                            <h4>Response Cookies</h4>
+                                            <pre>__cfduid=dc47675d886f09066e98cfb53c4be9ac31614755118;Path=/;Domain=.reqres.in;Secure;HttpOnly;Expires=2/4/21 7:05 AM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </span>
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="3-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                The status code for the request should be: 201
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="4"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection4 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                Parameterized Create user test using POST request
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.96s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection4" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="4-0"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection4-0 success-icon"
+                                   style="margin-left: 40px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection4-0')"
+                               style="display:block;">
+                                <span class="nested-step">
+                                To CREATE the user with name : &lt;null&gt; and jobTitile : HR Associate
+                            </span>
+                            </a>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.96s</span></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <table id="stepSection4-0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="4-0-0"/>
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                POST https://reqres.in/api/users/
+                            </span>
+                            <span class="evidence">
+                                    <span class="piece-of-evidence">
+                        <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                            data-target="#restModal-REST-19">
+                        REST Query
+                    </button>
+                </span>
+                        <!-- Modal -->
+                        <div class="rest-query-details">
+                            <div class="collapse multi-collapse" id="restModal-REST-19">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4>Response</h4>
+                                            <p>Status code: 201</p>
+                                            <p>Content Type: application/json</p>
+                                            <h4>Request Headers</h4>
+                                            <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                            <h4>Content Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;HR Associate&quot;<br>}</pre>
+                                            <h4>Request Cookies</h4>
+                                            <pre></pre>
+                                            <h4>Response Headers</h4>
+                                            <pre>Date: Wed, 03 Mar 2021 07:05:19 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 72<br>Connection: keep-alive<br>Set-Cookie: __cfduid=d0d2266183f2d4045fd973b07cb28c7e91614755119; expires=Fri, 02-Apr-21 07:05:19 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;48-QmYEk+xMfg8b7z3qMUvU3xUx2JA&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>cf-request-id: 089880d95a000001c8e7257000000001<br>Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=OCouJLVQyZH4accbkga%2F0Jpp8oq09iykKxdPEuPkRszdYofPNHNMdeB%2BcVEJgc475ZTQdmeYD5srPE31b7VRPipi0qmXA2Zxlbc%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}<br>NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 62a104088b9a01c8-SIN</pre>
+                                        <h4>Response Body</h4>
+                                            <pre>{<br>    &quot;job&quot;: &quot;HR Associate&quot;,<br>    &quot;id&quot;: &quot;185&quot;,<br>    &quot;createdAt&quot;: &quot;2021-03-03T07:05:19.772Z&quot;<br>}</pre>
+                                            <h4>Response Cookies</h4>
+                                            <pre>__cfduid=d0d2266183f2d4045fd973b07cb28c7e91614755119;Path=/;Domain=.reqres.in;Secure;HttpOnly;Expires=2/4/21 7:05 AM</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                    </span>
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="4-1"/>
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                The status code for the request should be: 201
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                        </table>
+                    </td>
+                <tr>
+                <tr class="test-SUCCESS">
+                        <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>5.22s</em></span></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div id="beforefooter"></div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="version">Serenity BDD version 2.0.81</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+            var imgsrc = $(".img" + divId).attr('src');
+            if (imgsrc == 'images/plus.png') {
+                $(".img" + divId).attr("src", function () {
+                    return "images/minus.png";
+                });
+
+            } else {
+                $(".img" + divId).attr("src", function () {
+                    return "images/plus.png";
+                });
+            }
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        $(document).ready(function () {
+            $('img.screenshot').imgPreview({
+                imgCSS: {
+                    width: '500px'
+                },
+                distanceFromCursor: {top: 10, left: -200}
+            });
+        });
+
+        //]]>
+    </script>
+    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+                src="" style="display: none; "></div>
+    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+        <img style="width: 200px; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+    </body>
+</html>

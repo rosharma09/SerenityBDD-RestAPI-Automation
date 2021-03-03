@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="testcases.GetRequestTest" skipped="0" tests="1" time="4.8" timestamp="2021-03-03 12:35:09"><testcase classname="testcases.GetRequestTest" name="Sample test for get request"><error message="A JSONObject text must begin with '{' at 1 [character 2 line 1]" type="org.json.JSONException">A JSONObject text must begin with '{' at 1 [character 2 line 1]</error><system-err>A JSONObject text must begin with '{' at 1 [character 2 line 1]&#13;
+org.json.JSONTokener.syntaxError(JSONTokener.java:507)&#13;
+org.json.JSONObject.&lt;init&gt;(JSONObject.java:222)&#13;
+org.json.JSONObject.&lt;init&gt;(JSONObject.java:406)&#13;
+stepdefination.ReqresAPIStep.getUserDetails(ReqresAPIStep.java:29)&#13;
+testcases.GetRequestTest.getUserTest(GetRequestTest.java:23)&#13;
+</system-err></testcase></testsuite>
